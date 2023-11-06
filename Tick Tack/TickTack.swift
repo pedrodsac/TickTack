@@ -15,7 +15,7 @@ struct TickTack: App {
 
         }
         Settings {
-            
+            SettingsView()
         }
         .commands {
             CommandGroup(replacing: .appInfo) {

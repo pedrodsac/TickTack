@@ -10,7 +10,7 @@ import Swift
 
 struct AboutView: View {
     var body: some View {
-        VStack {
+        NavigationStack {
             HStack {
                 Image("Icon")
                     .resizable()

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2FA730FA2AF80ACF00346089 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA730F92AF80ACF00346089 /* TimerView.swift */; };
 		2FA730FC2AF8151D00346089 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA730FB2AF8151D00346089 /* FocusView.swift */; };
-		2FA730FE2AF8228F00346089 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA730FD2AF8228F00346089 /* TextView.swift */; };
+		2FAD0F2E2AF9593A00A53935 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD0F2D2AF9593A00A53935 /* SettingsView.swift */; };
 		2FD4C97D2AF7F9AD007E381B /* TickTack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4C97C2AF7F9AD007E381B /* TickTack.swift */; };
 		2FD4C97F2AF7F9AD007E381B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4C97E2AF7F9AD007E381B /* ContentView.swift */; };
 		2FD4C9812AF7F9AE007E381B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD4C9802AF7F9AE007E381B /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		2FA730F92AF80ACF00346089 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		2FA730FB2AF8151D00346089 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
-		2FA730FD2AF8228F00346089 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		2FAD0F2D2AF9593A00A53935 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2FD4C9792AF7F9AD007E381B /* Tick Tack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick Tack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD4C97C2AF7F9AD007E381B /* TickTack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTack.swift; sourceTree = "<group>"; };
 		2FD4C97E2AF7F9AD007E381B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				2FD4C98C2AF7FC49007E381B /* AboutView.swift */,
 				2FA730F92AF80ACF00346089 /* TimerView.swift */,
 				2FA730FB2AF8151D00346089 /* FocusView.swift */,
-				2FA730FD2AF8228F00346089 /* TextView.swift */,
+				2FAD0F2D2AF9593A00A53935 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,10 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAD0F2E2AF9593A00A53935 /* SettingsView.swift in Sources */,
 				2FA730FC2AF8151D00346089 /* FocusView.swift in Sources */,
 				2FD4C97F2AF7F9AD007E381B /* ContentView.swift in Sources */,
 				2FA730FA2AF80ACF00346089 /* TimerView.swift in Sources */,
-				2FA730FE2AF8228F00346089 /* TextView.swift in Sources */,
 				2FD4C98D2AF7FC49007E381B /* AboutView.swift in Sources */,
 				2FD4C97D2AF7F9AD007E381B /* TickTack.swift in Sources */,
 			);
