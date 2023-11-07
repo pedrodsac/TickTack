@@ -47,7 +47,7 @@ public struct CustomTabView: View {
                 HStack {
                     Image(systemName: "\(self.tabIconName[index])")
                     Text(self.tabText[index])
-                }
+                }.fontWeight(.semibold)
                 .padding()
                 .foregroundColor(self.selection == index ? Color.accentColor : Color.primary)
                 .background(Color.secondaryBackgroundColor)
@@ -117,7 +117,18 @@ struct ContentView: View {
                         view: AnyView(
                             HStack {
                                 Spacer()
-                                TimerView()
+                                
+                                Spacer()
+                            }
+                        )
+                    ),
+                    (
+                        tabText: "Stop Watch",
+                        tabIconName: "stopwatch",
+                        view: AnyView(
+                            HStack {
+                                Spacer()
+                                StopwatchView()
                                 Spacer()
                             }
                         )
