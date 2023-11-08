@@ -21,7 +21,7 @@ struct AboutView: View {
                         .bold()
                     Text("A Pomodoro/Focus Timer")
                         .font(.body)
-                    Text("v0.1")
+                    Text("v1.0")
                         .font(.caption)
                         .padding(.top, 1)
                 }.padding()

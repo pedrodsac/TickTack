@@ -14,9 +14,9 @@ struct TickTack: App {
             ContentView()
 
         }
-        Settings {
-            SettingsView()
-        }
+        // Settings {
+        //    SettingsView()
+        // }
         .commands {
             CommandGroup(replacing: .appInfo) {
                 NavigationLink {

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  FocusView.swift
 //  Tick Tack
 //
 //  Created by Pedro Cordeiro on 05/11/2023.
@@ -10,15 +10,15 @@ import SwiftUI
 public extension Color {
 
     #if os(macOS)
-    static let backgroundColor = Color(NSColor.windowBackgroundColor)
-    static let secondaryBackgroundColor = Color(NSColor.controlBackgroundColor)
+    static let backgroundColor2 = Color(NSColor.windowBackgroundColor)
+    static let secondaryBackgroundColor2 = Color(NSColor.controlBackgroundColor)
     #else
     static let backgroundColor = Color(UIColor.systemBackground)
     static let secondaryBackgroundColor = Color(UIColor.secondarySystemBackground)
     #endif
 }
 
-public struct CustomTabView: View {
+public struct FocusTabView: View {
     
     public enum TabBarPosition { // Where the tab bar will be located within the view
         case top
@@ -89,12 +89,12 @@ public struct CustomTabView: View {
     }
 }
 
-struct ContentView: View {
+struct FocusView: View {
     
     var body: some View {
         NavigationStack {
             CustomTabView(
-                tabBarPosition: .bottom,
+                tabBarPosition: .top,
                 content: [
                     (
                         tabText: "Focus",
@@ -104,7 +104,7 @@ struct ContentView: View {
                                 Spacer()
                                 VStack {
                                     Spacer()
-                                    FocusView()
+                                    PomodoroView()
                                     Spacer()
                                 }
                                 Spacer()
@@ -112,33 +112,23 @@ struct ContentView: View {
                         )
                     ),
                     (
-                        tabText: "Timer",
-                        tabIconName: "clock",
+                        tabText: "Break",
+                        tabIconName: "pause.fill",
                         view: AnyView(
                             HStack {
                                 Spacer()
-                                TimerView()
-                                Spacer()
-                            }
-                        )
-                    ),
-                    (
-                        tabText: "Stop Watch",
-                        tabIconName: "stopwatch",
-                        view: AnyView(
-                            HStack {
-                                Spacer()
-                                StopwatchView()
+                                BreakView()
                                 Spacer()
                             }
                         )
                     ),
                 ]
             )
+            .padding(-8)
         }
     }
 }
 
 #Preview {
-    ContentView()
+    FocusView()
 }

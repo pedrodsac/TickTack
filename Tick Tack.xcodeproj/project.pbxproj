@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2F0DFD962AFA902F0085A9D1 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0DFD952AFA902F0085A9D1 /* TimerView.swift */; };
+		2F8DA3672AFC01CD009B1412 /* PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DA3662AFC01CD009B1412 /* PomodoroView.swift */; };
+		2F8DA3692AFC01DB009B1412 /* BreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DA3682AFC01DB009B1412 /* BreakView.swift */; };
 		2FA730FA2AF80ACF00346089 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA730F92AF80ACF00346089 /* StopwatchView.swift */; };
 		2FA730FC2AF8151D00346089 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA730FB2AF8151D00346089 /* FocusView.swift */; };
 		2FAD0F2E2AF9593A00A53935 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD0F2D2AF9593A00A53935 /* SettingsView.swift */; };
+		2FB61D762AFC0E3E0033D82D /* StopwatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB61D752AFC0E3E0033D82D /* StopwatchManager.swift */; };
 		2FD4C97D2AF7F9AD007E381B /* TickTack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4C97C2AF7F9AD007E381B /* TickTack.swift */; };
 		2FD4C97F2AF7F9AD007E381B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4C97E2AF7F9AD007E381B /* ContentView.swift */; };
 		2FD4C9812AF7F9AE007E381B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD4C9802AF7F9AE007E381B /* Assets.xcassets */; };
@@ -20,9 +23,12 @@
 
 /* Begin PBXFileReference section */
 		2F0DFD952AFA902F0085A9D1 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		2F8DA3662AFC01CD009B1412 /* PomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroView.swift; sourceTree = "<group>"; };
+		2F8DA3682AFC01DB009B1412 /* BreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakView.swift; sourceTree = "<group>"; };
 		2FA730F92AF80ACF00346089 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		2FA730FB2AF8151D00346089 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		2FAD0F2D2AF9593A00A53935 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2FB61D752AFC0E3E0033D82D /* StopwatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchManager.swift; sourceTree = "<group>"; };
 		2FD4C9792AF7F9AD007E381B /* Tick Tack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick Tack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD4C97C2AF7F9AD007E381B /* TickTack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickTack.swift; sourceTree = "<group>"; };
 		2FD4C97E2AF7F9AD007E381B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +49,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8DA3652AFC01BB009B1412 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				2FA730FB2AF8151D00346089 /* FocusView.swift */,
+				2F8DA3662AFC01CD009B1412 /* PomodoroView.swift */,
+				2F8DA3682AFC01DB009B1412 /* BreakView.swift */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		2FB61D742AFC0E1A0033D82D /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				2FA730F92AF80ACF00346089 /* StopwatchView.swift */,
+				2FB61D752AFC0E3E0033D82D /* StopwatchManager.swift */,
+			);
+			path = Stopwatch;
+			sourceTree = "<group>";
+		};
 		2FD4C9702AF7F9AD007E381B = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +107,12 @@
 		2FD4C98B2AF7FC33007E381B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F0DFD952AFA902F0085A9D1 /* TimerView.swift */,
 				2FD4C97E2AF7F9AD007E381B /* ContentView.swift */,
 				2FD4C98C2AF7FC49007E381B /* AboutView.swift */,
-				2FA730F92AF80ACF00346089 /* StopwatchView.swift */,
-				2FA730FB2AF8151D00346089 /* FocusView.swift */,
 				2FAD0F2D2AF9593A00A53935 /* SettingsView.swift */,
-				2F0DFD952AFA902F0085A9D1 /* TimerView.swift */,
+				2FB61D742AFC0E1A0033D82D /* Stopwatch */,
+				2F8DA3652AFC01BB009B1412 /* Focus */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8DA3692AFC01DB009B1412 /* BreakView.swift in Sources */,
 				2F0DFD962AFA902F0085A9D1 /* TimerView.swift in Sources */,
 				2FAD0F2E2AF9593A00A53935 /* SettingsView.swift in Sources */,
 				2FA730FC2AF8151D00346089 /* FocusView.swift in Sources */,
@@ -169,6 +195,8 @@
 				2FA730FA2AF80ACF00346089 /* StopwatchView.swift in Sources */,
 				2FD4C98D2AF7FC49007E381B /* AboutView.swift in Sources */,
 				2FD4C97D2AF7F9AD007E381B /* TickTack.swift in Sources */,
+				2F8DA3672AFC01CD009B1412 /* PomodoroView.swift in Sources */,
+				2FB61D762AFC0E3E0033D82D /* StopwatchManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +343,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocordeiro.TickTack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -352,14 +381,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocordeiro.TickTack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
