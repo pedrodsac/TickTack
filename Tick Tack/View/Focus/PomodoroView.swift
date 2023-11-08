@@ -29,7 +29,7 @@ struct PomodoroView: View {
                 .padding(1)
             HStack(spacing:10) {
                 Button("Start") {
-                    vm.start(minutes: vm.minutes)
+                    vm.start(minutes: 25)
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(vm.isActive)
