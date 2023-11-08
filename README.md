@@ -10,7 +10,7 @@ Tick Tack is an open-source Focus timer. Right now, it is terrible, but the list
 4. Isolation Mode - set a period of time where all un-selected apps are turned off (iPad and Mac) ❌
 5. Controls in the menu bar (Mac only) ❌
 
-### Screenshots
+## Screenshots
 
 ![Screenshot 2023-11-08 at 9 09 19 PM](https://github.com/pedrodsac/TickTack/assets/59292481/b697e6da-04f2-4625-912b-d58741fbc633)
 ![Screenshot 2023-11-08 at 9 09 25 PM](https://github.com/pedrodsac/TickTack/assets/59292481/a752990f-e5ff-49de-99ef-e51f17fc3b22)
