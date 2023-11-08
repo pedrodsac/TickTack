@@ -13,8 +13,8 @@ public extension Color {
     static let backgroundColor2 = Color(NSColor.windowBackgroundColor)
     static let secondaryBackgroundColor2 = Color(NSColor.controlBackgroundColor)
     #else
-    static let backgroundColor = Color(UIColor.systemBackground)
-    static let secondaryBackgroundColor = Color(UIColor.secondarySystemBackground)
+    static let backgroundColor2 = Color(UIColor.systemBackground)
+    static let secondaryBackgroundColor2 = Color(UIColor.secondarySystemBackground)
     #endif
 }
 
