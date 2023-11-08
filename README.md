@@ -12,8 +12,9 @@ Tick Tack is an open-source Focus timer. Right now, it is terrible, but the list
 
 ## Screenshots
 
-![Screenshot 2023-11-08 at 9 10 58 PM](https://github.com/pedrodsac/TickTack/assets/59292481/fa6d372f-f40b-4079-aa6b-7b4a98ed50b6)
-![Screenshot 2023-11-08 at 9 09 19 PM](https://github.com/pedrodsac/TickTack/assets/59292481/b697e6da-04f2-4625-912b-d58741fbc633)
-![Screenshot 2023-11-08 at 9 09 25 PM](https://github.com/pedrodsac/TickTack/assets/59292481/a752990f-e5ff-49de-99ef-e51f17fc3b22)
-![Screenshot 2023-11-08 at 9 09 28 PM](https://github.com/pedrodsac/TickTack/assets/59292481/e19cc209-784d-4475-9a1a-1a156f232996)
-![Screenshot 2023-11-08 at 9 09 41 PM](https://github.com/pedrodsac/TickTack/assets/59292481/7f8e0e8a-cb04-4667-a6e6-f32c0867adf9)
+
+![Screenshot 2023-11-08 at 9 10 58 PM](https://github.com/pedrodsac/TickTack/assets/59292481/bbf479fe-218f-4b1c-bb7a-ddf43d77e5bc)
+![Screenshot 2023-11-08 at 9 09 19 PM](https://github.com/pedrodsac/TickTack/assets/59292481/545a5a57-c109-4497-9339-769dde50e455)
+![Screenshot 2023-11-08 at 9 09 25 PM](https://github.com/pedrodsac/TickTack/assets/59292481/c8bca516-79be-4ef2-b79a-84631daaf892)
+![Screenshot 2023-11-08 at 9 09 28 PM](https://github.com/pedrodsac/TickTack/assets/59292481/75dbf689-6ae3-42cd-b9a3-8a3a96d04544)
+![Screenshot 2023-11-08 at 9 09 41 PM](https://github.com/pedrodsac/TickTack/assets/59292481/5ccb34ca-3101-4513-b6c0-a01e985b2438)
