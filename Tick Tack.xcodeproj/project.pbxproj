@@ -133,6 +133,8 @@
 			dependencies = (
 			);
 			name = "Tick Tack";
+			packageProductDependencies = (
+			);
 			productName = "Tick Tack";
 			productReference = 2FD4C9792AF7F9AD007E381B /* Tick Tack.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +163,8 @@
 				Base,
 			);
 			mainGroup = 2FD4C9702AF7F9AD007E381B;
+			packageReferences = (
+			);
 			productRefGroup = 2FD4C97A2AF7F9AD007E381B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Tick Tack/Preview Content\"";
+				DEVELOPMENT_TEAM = 98PM4FCU49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tick Tack";
@@ -364,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Tick Tack/Preview Content\"";
+				DEVELOPMENT_TEAM = 98PM4FCU49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tick Tack";

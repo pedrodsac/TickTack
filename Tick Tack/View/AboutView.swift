@@ -24,6 +24,10 @@ struct AboutView: View {
                     Text("v1.1")
                         .font(.caption)
                         .padding(.top, 1)
+                    Label(
+                        title: { Text("https://www.github.com/pedrodsac/TickTack") },
+                        icon: { Image(systemName: "42.circle") }
+                    )
                 }.padding()
             }.padding()
         }

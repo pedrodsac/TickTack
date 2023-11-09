@@ -32,14 +32,14 @@ struct TimerView: View {
                 )
             
             Slider(value: $vm.minutes, in: 0...60, step: 1)
-                .padding(.vertical)
+                .padding()
                 .disabled(vm.isActive)
                 .animation(.easeInOut, value: vm.minutes)
-                .frame(width: width)
+                .frame(width: width+100)
             
             HStack(spacing:10) {
-                Button("Start") {
-                    vm.start(minutes: vm.minutes)
+                Button(vm.timerStarted ? "Resume" : "Start") {
+                    vm.timerStarted ? vm.isActive = true : vm.start(minutes: vm.minutes)
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(vm.isActive)
@@ -54,6 +54,7 @@ struct TimerView: View {
                 .disabled(vm.isActive)
                 .buttonStyle(.borderedProminent)
             }
+            .frame(width: width)
         }
         .padding()
         .onReceive(timer) { _ in
@@ -67,13 +68,14 @@ extension TimerView {
         @Published var isActive = false
         @Published var showingAlert = false
         @Published var time: String = "5:00"
-        @Published var minutes: Float = 5.0 {
+        @Published var timerStarted = false
+        @Published var minutes: Float = 5.00 {
             didSet {
                 self.time = "\(Int(minutes)):00"
             }
         }
-        private var initialTime = 0
-        private var endDate = Date()
+        var initialTime = 0
+        var endDate = Date()
         
         // Start the timer with the given amount of minutes
         func start(minutes: Float) {
@@ -81,6 +83,7 @@ extension TimerView {
             self.endDate = Date()
             self.isActive = true
             self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: endDate)!
+            self.timerStarted = true // Set the timerStarted property to true
         }
         
         // Reset the timer
@@ -88,6 +91,7 @@ extension TimerView {
             self.minutes = Float(initialTime)
             self.isActive = false
             self.time = "\(Int(minutes)):00"
+            self.timerStarted = false
         }
         
         // Show updates of the timer
