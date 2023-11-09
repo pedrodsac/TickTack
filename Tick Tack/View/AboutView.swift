@@ -21,13 +21,13 @@ struct AboutView: View {
                         .bold()
                     Text("A Pomodoro/Focus Timer")
                         .font(.body)
-                    Text("v1.1")
+                    Text("v1.1.1")
                         .font(.caption)
-                        .padding(.top, 1)
+                        .padding(.vertical, 1)
                     Label(
                         title: { Text("https://www.github.com/pedrodsac/TickTack") },
-                        icon: { Image(systemName: "42.circle") }
-                    )
+                        icon: { Image(systemName: "ellipsis.curlybraces") }
+                    ).font(.caption2)
                 }.padding()
             }.padding()
         }
