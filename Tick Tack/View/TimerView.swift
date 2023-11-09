@@ -27,24 +27,19 @@ struct TimerView: View {
                 .background(.thinMaterial)
                 .cornerRadius(20)
                 .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.gray, lineWidth: 4)
-                    )
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(Color.gray, lineWidth: 4)
+                )
             
             Slider(value: $vm.minutes, in: 0...60, step: 1)
-                .padding()
+                .padding(.vertical)
                 .disabled(vm.isActive)
                 .animation(.easeInOut, value: vm.minutes)
-                .frame(width: width+100)
-
+                .frame(width: width)
+            
             HStack(spacing:10) {
                 Button("Start") {
                     vm.start(minutes: vm.minutes)
-                }
-                .buttonStyle(.borderedProminent)
-                .disabled(vm.isActive)
-                Button("Resume") {
-                    vm.isActive = true
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(vm.isActive)
@@ -56,10 +51,9 @@ struct TimerView: View {
                 Button("Reset") {
                     vm.reset()
                 }
-                .disabled(vm.isActive == false)
+                .disabled(vm.isActive)
                 .buttonStyle(.borderedProminent)
             }
-            .frame(width: width)
         }
         .padding()
         .onReceive(timer) { _ in

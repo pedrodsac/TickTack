@@ -28,16 +28,19 @@ struct PomodoroView: View {
                 .frame(width: 0)
                 .padding(1)
             HStack(spacing:10) {
-                Button("Start") {
-                    vm.start(minutes: 25)
+                if vm.minutes == 25 {
+                    Button("Start") {
+                        vm.start(minutes: 25)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(vm.isActive)
+                } else {
+                    Button("Resume") {
+                        vm.isActive = true
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(vm.isActive)
                 }
-                .buttonStyle(.borderedProminent)
-                .disabled(vm.isActive)
-                Button("Resume") {
-                    vm.isActive = true
-                }
-                .buttonStyle(.borderedProminent)
-                .disabled(vm.isActive)
                 Button("Pause") {
                     vm.isActive = false
                 }
@@ -46,10 +49,10 @@ struct PomodoroView: View {
                 Button("Reset") {
                     vm.reset()
                 }
-                .disabled(vm.isActive == false)
+                .disabled(vm.isActive)
+                .disabled(vm.minutes == 25)
                 .buttonStyle(.borderedProminent)
             }
-            .frame(width: width)
         }
         .padding()
         .onReceive(timer) { _ in

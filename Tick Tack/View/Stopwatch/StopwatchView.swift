@@ -28,13 +28,36 @@ struct StopwatchView: View {
                 .frame(width: 0)
                 .padding(1)
             HStack(spacing: 10) {
-                Button(action: {self.stopWatchManager.start()}) {
-                    Text("Start")
-                }.disabled(stopWatchManager.mode == .running).buttonStyle(.borderedProminent)
-                Button(action: {self.stopWatchManager.stop()}) {
-                    Text("Stop")
-                }.disabled(stopWatchManager.mode == .stopped).buttonStyle(.borderedProminent)
-            }.frame(width: width)
+                if stopWatchManager.mode == .paused {
+                    Button(action: {self.stopWatchManager.start()}) {
+                        Text("Resume")
+                    }.disabled(stopWatchManager.mode == .running).buttonStyle(.borderedProminent)
+                } else {
+                    Button(action: {self.stopWatchManager.start()}) {
+                        Text("Start")
+                    }
+                    .disabled(stopWatchManager.mode == .running)
+                    .buttonStyle(.borderedProminent)
+                }
+                if stopWatchManager.mode == .paused {
+                    Button(action: {self.stopWatchManager.stop()}) {
+                        Text("Stop")
+                    }
+                    .disabled(stopWatchManager.mode == .stopped)
+                    .buttonStyle(.borderedProminent)
+                } else if stopWatchManager.mode == .running {
+                    Button(action: {self.stopWatchManager.pause()}) {
+                        Text("Stop")
+                    }
+                    .disabled(stopWatchManager.mode == .stopped)
+                    .disabled(stopWatchManager.mode == .paused)
+                    .buttonStyle(.borderedProminent)
+                } else if stopWatchManager.mode == .stopped {
+                    Button(action: {self.stopWatchManager.stop()}) {
+                        Text("Stop")
+                    }.disabled(true)
+                }
+            }
         }.padding()
     }
 }

@@ -28,16 +28,19 @@ struct BreakView: View {
                 .frame(width: 0)
                 .padding(1)
             HStack(spacing:10) {
-                Button("Start") {
-                    vm.start(minutes: vm.minutes)
+                if vm.minutes == 5 {
+                    Button("Start") {
+                        vm.start(minutes: 5)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(vm.isActive)
+                } else {
+                    Button("Resume") {
+                        vm.isActive = true
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(vm.isActive)
                 }
-                .buttonStyle(.borderedProminent)
-                .disabled(vm.isActive)
-                Button("Resume") {
-                    vm.isActive = true
-                }
-                .buttonStyle(.borderedProminent)
-                .disabled(vm.isActive)
                 Button("Pause") {
                     vm.isActive = false
                 }
@@ -46,10 +49,10 @@ struct BreakView: View {
                 Button("Reset") {
                     vm.reset()
                 }
-                .disabled(vm.isActive == false)
+                .disabled(vm.isActive)
+                .disabled(vm.minutes == 5)
                 .buttonStyle(.borderedProminent)
             }
-            .frame(width: width)
         }
         .padding()
         .onReceive(timer) { _ in
@@ -63,7 +66,7 @@ extension BreakView {
         @Published var isActive = false
         @Published var showingAlert = false
         @Published var time: String = "5:00"
-        @State var minutes: Float = 5 {
+        @Published var minutes: Float = 5 {
             didSet {
                 self.time = "\(Int(minutes)):00"
             }
