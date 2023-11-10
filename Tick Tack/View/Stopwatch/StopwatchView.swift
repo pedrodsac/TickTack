@@ -54,7 +54,7 @@ struct StopwatchView: View {
                     .buttonStyle(.borderedProminent)
                 } else if stopWatchManager.mode == .stopped {
                     Button(action: {self.stopWatchManager.stop()}) {
-                        Text("Stop")
+                        Text("Reset")
                     }.disabled(true)
                 }
             }
