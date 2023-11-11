@@ -7,12 +7,13 @@
 
 import SwiftUI
 import Foundation
+import AppKit
 
 struct TimerView: View {
     @StateObject private var vm = ViewModel()
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 350
-    
+
     var body: some View {
         VStack {
             Text("\(vm.time)")
