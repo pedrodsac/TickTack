@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "tasks": [
+        {
+            "taskName": "Debug",
+            "command": "xcodebuild -configuration Debug",
+            "args": [],
+            "isShellCommand": true
+        },
+        {
+            "taskName": "Release",
+            "command": "xcodebuild -configuration Release",
+            "args": [],
+            "isShellCommand": true
+        }
+    ]
+}
