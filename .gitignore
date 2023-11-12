@@ -1,3 +1,5 @@
 
 .DS_Store
 build/
+Tick Tack.xcodeproj/project.xcworkspace/xcuserdata/pedrocordeiro.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcuserstate
