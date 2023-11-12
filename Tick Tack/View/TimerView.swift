@@ -19,6 +19,7 @@ struct TimerView: View {
             Text("\(vm.time)")
                 .font(.system(size: 70, weight: .medium, design: .rounded))
                 .alert("Timer done!", isPresented: $vm.showingAlert) {
+                    
                     Button("Continue", role: .cancel) {
                         // Code
                     }
